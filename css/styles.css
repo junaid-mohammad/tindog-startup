@@ -1,4 +1,28 @@
+/* Gradient Animation */
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* White section */
+.white-section {
+  background-color: #fff;
+}
+
+/* General Styling */
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -13,7 +37,6 @@ p {
 }
 
 /* Headings */
-
 .big-heading {
   font-family: "Montserrat-Black";
   font-size: 3.5rem;
@@ -26,24 +49,16 @@ p {
 }
 
 /* Containers */
-
 .container-fluid{
   padding: 7% 15%;
 }
 
-/* Sections */
-
-.colored-section {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-.white-section {
-  background-color: #fff;
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
 }
 
 /* Navigation Bar */
-
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -63,17 +78,18 @@ p {
   font-family: "Montserrat-Light";
 }
 
-/* Buttons */
+/* Override Bootstrap's default color for navbar text in dark mode */
+.navbar-dark .navbar-nav .nav-link {
+  color: black !important; /* Replace black with your desired color */
+}
 
-.download-button {
-  margin: 5% 3% 5% 0;
+.navbar-dark .navbar-brand {
+  color: black !important; /* Replace black with your desired color */
 }
 
 /* Title Section */
-
 #title {
-  background-color: #ff4c68;
-  color: #fff;
+  color: black;
   text-align: left;
 }
 
@@ -81,17 +97,14 @@ p {
   padding: 3% 15% 7%;
 }
 
-/* Title Image */
-
 .title-image {
   width: 60%;
   transform: rotate(25deg);
   position: absolute;
-  right: 30%;
+  right: 10%;
 }
 
 /* Features Section */
-
 #features {
   position: relative;
 }
@@ -105,7 +118,8 @@ p {
 }
 
 .icon {
-  color: #ef8172;
+  /* color: #ef8172; */
+  color: black;
   margin-bottom: 1rem;
 }
 
@@ -114,11 +128,6 @@ p {
 }
 
 /* Testimonial Section */
-
-#testimonials {
-  background-color: #ef8172;
-}
-
 .testimonial-text {
   font-size: 3rem;
   line-height: 1.5;
@@ -130,19 +139,12 @@ p {
   margin: 20px;
 }
 
-
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
-}
-
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
 
 /* Pricing Section */
-
 #pricing {
   padding: 100px;
 }
@@ -156,16 +158,12 @@ p {
   padding: 3% 2%;
 }
 
-/* CTA Section */
-
-
 /* Footer Section */
-
-
 .social-icon {
   margin: 20px 10px;
 }
 
+/* Media Queries to improve Responsiveness */
 @media (max-width: 1028px) {
 
   #title {

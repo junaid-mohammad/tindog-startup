@@ -12,7 +12,6 @@ p {
 }
 
 /* Headings */
-
 .big-heading {
   font-family: 'Montserrat-Black', sans-serif;
   font-size: 3.5rem;
@@ -27,13 +26,11 @@ p {
 }
 
 /* Containers */
-
 .container-fluid {
   padding: 7% 15%;
 }
 
 /* Sections */
-
 .colored-section {
   background-color: #FF4C68;
   color: #FFF;
@@ -69,7 +66,6 @@ p {
 }
 
 /* Title Section */
-
 #title .container-fluid {
   text-align: left;
   padding: 3% 15% 8%;
