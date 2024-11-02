@@ -168,10 +168,12 @@ p {
 
   #title {
     text-align: center;
+    height: 1010px;
   }
 
   .title-image {
     position: static;
     transform: rotate(0);
+    margin-top: 40px;
   }
 }
