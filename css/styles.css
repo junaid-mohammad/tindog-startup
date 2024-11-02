@@ -163,7 +163,7 @@ p {
   margin: 20px 10px;
 }
 
-/* Media Queries to improve Responsiveness */
+/* Media Queries to improve Responsiveness for title section */
 @media (max-width: 1028px) {
 
   #title {
@@ -173,10 +173,7 @@ p {
   .title-image {
     position: static;
     transform: rotate(0);
-    margin-top: 40px;
+    margin-top: 6%;
   }
 
-  #pricing {
-    align: center;
-  }
 }
